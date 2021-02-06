@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 28 20:13:34 2019
+# Process ID: 10532
+# Current directory: C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1
+# Command line: vivado.exe -log uart_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_ram.tcl
+# Log file: C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/uart_ram.vds
+# Journal file: C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_ram.tcl -notrace

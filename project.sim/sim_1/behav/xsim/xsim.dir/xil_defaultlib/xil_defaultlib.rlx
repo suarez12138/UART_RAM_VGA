@@ -1,0 +1,16 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/99681/Desktop/Fdiv.v,1577076231,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv2.v,,Fdiv,,,,,,,,
+C:/Users/99681/Desktop/vga.v,1576915771,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sim_1/new/sim_ram.v,,vga,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sim_1/new/sim_ram.v,1577844815,verilog,,,,sim_ram,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sim_1/new/simuart.v,1577021164,verilog,,,,simuart,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/ip/Uart_Ram_VGA/sim/Uart_Ram_VGA.v,1577190587,verilog,,C:/Users/99681/Desktop/Fdiv.v,,Uart_Ram_VGA,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv2.v,1577155750,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv3.v,,Fdiv2,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv3.v,1577069111,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v,,Fdiv3,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v,1577535198,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v,,Fdiv_slow,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/clk_b.v,1577188302,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v,,clk_b,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v,1577843786,verilog,,C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v,,uart,,,,,,,,
+C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v,1577845363,verilog,,C:/Users/99681/Desktop/vga.v,,uart_ram,,,,,,,,

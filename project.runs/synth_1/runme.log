@@ -1,0 +1,547 @@
+
+*** Running vivado
+    with args -log uart_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_ram.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source uart_ram.tcl -notrace
+Command: synth_design -top uart_ram -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18632 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 340.797 ; gain = 101.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_ram' [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:3]
+	Parameter CounterWidth1 bound to: 10 - type: integer 
+	Parameter VisiblErea1 bound to: 640 - type: integer 
+	Parameter FrontPorch1 bound to: 16 - type: integer 
+	Parameter SyncPulse1 bound to: 96 - type: integer 
+	Parameter BackPorch1 bound to: 48 - type: integer 
+	Parameter CounterWidth2 bound to: 10 - type: integer 
+	Parameter VisiblErea2 bound to: 480 - type: integer 
+	Parameter FrontPorch2 bound to: 10 - type: integer 
+	Parameter SyncPulse2 bound to: 2 - type: integer 
+	Parameter BackPorch2 bound to: 33 - type: integer 
+	Parameter length bound to: 384 - type: integer 
+	Parameter width bound to: 384 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Fdiv2' [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv2.v:3]
+	Parameter period bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Fdiv2' (1#1) [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv2.v:3]
+INFO: [Synth 8-638] synthesizing module 'Fdiv3' [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv3.v:3]
+	Parameter period bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Fdiv3' (2#1) [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv3.v:3]
+INFO: [Synth 8-638] synthesizing module 'Fdiv_slow' [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v:3]
+	Parameter period bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Fdiv_slow' (3#1) [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v:3]
+INFO: [Synth 8-638] synthesizing module 'Uart_Ram_VGA' [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/.Xil/Vivado-10532-DESKTOP-8DK78OG/realtime/Uart_Ram_VGA_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Uart_Ram_VGA' (4#1) [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/.Xil/Vivado-10532-DESKTOP-8DK78OG/realtime/Uart_Ram_VGA_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'uart' [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:3]
+	Parameter BPS_115200 bound to: 434 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart' (5#1) [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:3]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/99681/Desktop/vga.v:3]
+	Parameter CounterWidth1 bound to: 10 - type: integer 
+	Parameter VisiblErea1 bound to: 640 - type: integer 
+	Parameter FrontPorch1 bound to: 16 - type: integer 
+	Parameter SyncPulse1 bound to: 96 - type: integer 
+	Parameter BackPorch1 bound to: 48 - type: integer 
+	Parameter CounterWidth2 bound to: 10 - type: integer 
+	Parameter VisiblErea2 bound to: 480 - type: integer 
+	Parameter FrontPorch2 bound to: 10 - type: integer 
+	Parameter SyncPulse2 bound to: 2 - type: integer 
+	Parameter BackPorch2 bound to: 33 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Fdiv' [C:/Users/99681/Desktop/Fdiv.v:3]
+	Parameter period bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Fdiv' (6#1) [C:/Users/99681/Desktop/Fdiv.v:3]
+INFO: [Synth 8-256] done synthesizing module 'vga' (7#1) [C:/Users/99681/Desktop/vga.v:3]
+WARNING: [Synth 8-350] instance 'u3' of module 'vga' requires 7 connections, but only 4 given [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:52]
+WARNING: [Synth 8-5788] Register addra_reg in module uart_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:50]
+WARNING: [Synth 8-5788] Register count_uart_to_ram_reg in module uart_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:68]
+WARNING: [Synth 8-5788] Register input_to_ram_reg in module uart_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:72]
+WARNING: [Synth 8-5788] Register addrb_reg in module uart_ram is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:50]
+WARNING: [Synth 8-3848] Net green in module/entity uart_ram does not have driver. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:22]
+WARNING: [Synth 8-3848] Net red in module/entity uart_ram does not have driver. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:22]
+INFO: [Synth 8-256] done synthesizing module 'uart_ram' (8#1) [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 392.742 ; gain = 153.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 392.742 ; gain = 153.645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/.Xil/Vivado-10532-DESKTOP-8DK78OG/dcp1/Uart_Ram_VGA_in_context.xdc] for cell 'u9'
+Finished Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/.Xil/Vivado-10532-DESKTOP-8DK78OG/dcp1/Uart_Ram_VGA_in_context.xdc] for cell 'u9'
+Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc]
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'data_out_judge'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'data_out_judge'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[11]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[10]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[9]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[8]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[7]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[6]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[5]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[4]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[3]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[2]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[1]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[0]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[11]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[10]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[9]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[8]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[7]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[6]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[5]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[4]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[3]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[2]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[1]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'data_vga[0]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'count_uart_to_ram'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'count_uart_to_ram'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'tmp'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'tmp'. [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc:116]
+Finished Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/uart_ram_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/constrs_1/new/pro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_ram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_ram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 740.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u9. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v:14]
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:53]
+WARNING: [Synth 8-6014] Unused sequential element cnt2_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:55]
+INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "counter2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [C:/Users/99681/Desktop/vga.v:22]
+WARNING: [Synth 8-6014] Unused sequential element counter1_reg was removed.  [C:/Users/99681/Desktop/vga.v:28]
+WARNING: [Synth 8-6014] Unused sequential element counter2_reg was removed.  [C:/Users/99681/Desktop/vga.v:41]
+WARNING: [Synth 8-6014] Unused sequential element counter3_reg was removed.  [C:/Users/99681/Desktop/vga.v:72]
+INFO: [Synth 8-5546] ROM "counter2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:103]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:99]
+INFO: [Synth 8-5544] ROM "addra" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "counter2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element counter1_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:86]
+WARNING: [Synth 8-6014] Unused sequential element leftspace_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:96]
+WARNING: [Synth 8-6014] Unused sequential element upspace_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:97]
+WARNING: [Synth 8-6014] Unused sequential element counter2_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'red_reg' [C:/Users/99681/Desktop/vga.v:81]
+WARNING: [Synth 8-327] inferring latch for variable 'green_reg' [C:/Users/99681/Desktop/vga.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'blue_reg' [C:/Users/99681/Desktop/vga.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_ram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module Fdiv2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Fdiv3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Fdiv_slow 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Fdiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element u2/data_out_judge_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:95]
+INFO: [Synth 8-5546] ROM "u3/counter2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element nolabel_line48/count_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/Fdiv_slow.v:14]
+WARNING: [Synth 8-6014] Unused sequential element u2/cnt1_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:53]
+WARNING: [Synth 8-6014] Unused sequential element u2/cnt2_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart.v:55]
+WARNING: [Synth 8-6014] Unused sequential element u3/delay_reg was removed.  [C:/Users/99681/Desktop/vga.v:22]
+WARNING: [Synth 8-6014] Unused sequential element u3/counter1_reg was removed.  [C:/Users/99681/Desktop/vga.v:28]
+WARNING: [Synth 8-6014] Unused sequential element u3/counter2_reg was removed.  [C:/Users/99681/Desktop/vga.v:41]
+WARNING: [Synth 8-6014] Unused sequential element u3/counter3_reg was removed.  [C:/Users/99681/Desktop/vga.v:72]
+WARNING: [Synth 8-6014] Unused sequential element leftspace_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:96]
+WARNING: [Synth 8-6014] Unused sequential element counter1_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:86]
+WARNING: [Synth 8-6014] Unused sequential element upspace_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:97]
+WARNING: [Synth 8-6014] Unused sequential element counter2_reg was removed.  [C:/Users/99681/Desktop/vivadoProject/project/project.srcs/sources_1/new/uart_ram.v:123]
+WARNING: [Synth 8-3332] Sequential element (u3/red_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/red_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/red_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/red_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/green_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/green_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/green_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/green_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/blue_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/blue_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/blue_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/blue_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[10]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[9]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[8]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[7]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[6]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[5]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[4]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/counter3_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (data_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (data_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (data_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (data_reg[0]) is unused and will be removed from module uart_ram.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 740.188 ; gain = 501.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u4/count_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u4/count_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u4/count_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u4/count_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u2/u/count_reg[3]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u2/u/count_reg[2]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u2/u/count_reg[1]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u2/u/count_reg[0]) is unused and will be removed from module uart_ram.
+WARNING: [Synth 8-3332] Sequential element (u3/delay_reg[3]) is unused and will be removed from module uart_ram.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Uart_Ram_VGA  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |Uart_Ram_VGA |     1|
+|2     |BUFG         |     3|
+|3     |CARRY4       |    58|
+|4     |LUT1         |    18|
+|5     |LUT2         |   118|
+|6     |LUT3         |    37|
+|7     |LUT4         |    93|
+|8     |LUT5         |    54|
+|9     |LUT6         |    37|
+|10    |FDCE         |   174|
+|11    |FDPE         |     3|
+|12    |FDRE         |    49|
+|13    |FDSE         |     2|
+|14    |IBUF         |     7|
+|15    |OBUF         |    14|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------+------+
+|      |Instance         |Module    |Cells |
++------+-----------------+----------+------+
+|1     |top              |          |   679|
+|2     |  nolabel_line48 |Fdiv_slow |   179|
+|3     |  u2             |uart      |    78|
+|4     |    u            |Fdiv2_0   |     2|
+|5     |  u3             |vga       |    84|
+|6     |    u1           |Fdiv      |    10|
+|7     |  u4             |Fdiv2     |     2|
+|8     |  u5             |Fdiv3     |    10|
++------+-----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 758.672 ; gain = 172.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 758.672 ; gain = 519.574
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 762.422 ; gain = 532.434
+INFO: [Common 17-1381] The checkpoint 'C:/Users/99681/Desktop/vivadoProject/project/project.runs/synth_1/uart_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_ram_utilization_synth.rpt -pb uart_ram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 762.422 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 28 20:14:17 2019...
